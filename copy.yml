@@ -1,0 +1,5 @@
+---
+- hosts: deck
+  gather_facts: yes
+  roles:
+  - remotecopy

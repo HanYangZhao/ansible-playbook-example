@@ -1,0 +1,7 @@
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: text.txt
+    dest: '/home/{{ dst_user }}/text.txt'
+    owner: '{{ dst_user }}'
+    group: '{{ dst_user }}'
+    mode: '0644'
